@@ -57,22 +57,24 @@ public class GameManager : MonoBehaviour
         {
             scoreManager.DisplayScore(0);
             birdController.interactable = true;
-            Time.timeScale = 1f; //Trả lại cho game chạy bình thường
+            Time.timeScale = 1f; 
         }
         else if (currentState is GameState.GameOver)
         {
             birdController.interactable = false;
-            Time.timeScale = 0f; //Đóng băng game
+            Time.timeScale = 0f; 
         }
     }
     private void HandleGameOver()
     {
         ChangeGameState(GameState.GameOver);
-        gameLostPanel.ShowPanel();  
+        scoreManager.gameObject.SetActive(false);
+        gameLostPanel.ShowPanel(scoreManager.currentScore);  
     }
     private void HandleGameStart()
     {
         ChangeGameState(GameState.Ready);
+        scoreManager.gameObject.SetActive(true);
         gameReadyPanel.ShowPanel();
     }
     public void HandleGameReplay()

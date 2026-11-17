@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using NUnit.Framework;
+using UnityEngine;
 using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
@@ -7,8 +8,9 @@ public class ScoreManager : MonoBehaviour
     public int currentScore {  get; private set; }
 
     [SerializeField] private BirdController birdController;
-
+ 
     private int scoreLength = 1;
+
 
     private void OnEnable()
     {

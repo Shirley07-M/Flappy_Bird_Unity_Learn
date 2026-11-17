@@ -7,7 +7,6 @@ public class Pipe : MonoBehaviour
     private Collider2D pipeCollider;
 
 
-
     private void Awake()
     {
         pipeCollider = GetComponent<Collider2D>();
