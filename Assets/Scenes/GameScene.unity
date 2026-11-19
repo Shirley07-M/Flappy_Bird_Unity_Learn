@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69eac5672c20d774fbaf0ff776141228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sfx: {fileID: 8300000, guid: 7731ca3d8f6a9e144a505c7a80d49c9c, type: 3}
+  pointSFX: {fileID: 8300000, guid: 7731ca3d8f6a9e144a505c7a80d49c9c, type: 3}
   birdController: {fileID: 1591125299}
 --- !u!4 &50337534
 Transform:
